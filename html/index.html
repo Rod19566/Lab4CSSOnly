@@ -3,7 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4</title>
+    <title>Lab 4</title> 
+    <style>
+      body {
+      background-color: #ade8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #jake {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    /* Jake's head */
+    #head {
+      position: absolute;
+      background-color: #f4d03f; /* Yellow */
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      top: 40px;
+      left: 40px;
+    }
+
+    /* Jake's left eye */
+    #left-eye {
+      position: absolute;
+      background-color: #000; /* Black */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 60px;
+      left: 70px;
+    }
+
+    /* Jake's right eye */
+    #right-eye {
+      position: absolute;
+      background-color: #000; /* Black */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 60px;
+      left: 110px;
+    }
+
+    /* Jake's mouth */
+    #mouth {
+      position: absolute;
+      border: 2px solid #000; /* Black */
+      width: 60px;
+      height: 20px;
+      border-radius: 10px;
+      top: 100px;
+      left: 70px;
+    }
+    </style>
   </head>
   <body>
     <main>
@@ -15,9 +75,12 @@
         <p>
           Jake the Dog
         </p>
-        <ul>
-          <li><a href="Yes/EatTheApple.html">Eat the apple</a></li>
-        </ul>
+        <div id="jake">
+          <div id="head"></div>
+          <div id="left-eye"></div>
+          <div id="right-eye"></div>
+          <div id="mouth"></div>
+        </div>
       </article>
     </main>
   </body>
