@@ -12,7 +12,7 @@ body {
     align-items: flex-start; !important;
     width: 200px;
     height: 250px;
-  }
+ }
 
   .head {
     position: fixed;
@@ -35,8 +35,7 @@ body {
     left: 60px; 
   }
 
-  /* TAIL */
-  .parallelogram {
+  .tail {
     position: fixed;
     width: 50px;
     height: 25px;
@@ -45,7 +44,15 @@ body {
     transform: skew(20deg);
     top: 175px;
     left: 40px;
+    transition: 0.3s;
   }
+  
+    /* ANIMATION */
+    .tail:hover {
+    height: 55px;
+    top: 145px;
+    left: 35px;
+    }
 
   .left-leg {
     position: fixed;
@@ -179,7 +186,13 @@ body {
     border-radius: 10px;
     top: 95px;
     left: 95px;
+    transition: 0.3s;
   }
+  
+    /* ANIMATION */
+    .mouth:hover {
+    height: 55px;
+    }
 
   .left-arm {
     position: fixed;
@@ -191,6 +204,17 @@ body {
     top: 150px;
     left: 55px;
   }
+  
+  .left-hand {
+    position: fixed;
+    width: 18px;
+    height: 8px;
+    background-color: #f4d03f; /* Yellow */
+    border: 2px solid #000; /* Black */
+    border-radius: 50%;
+    top: 175px;
+    left: 57px;   
+  }
 
   .right-arm {
     position: fixed;
@@ -201,4 +225,22 @@ body {
     transform: skew(-10deg);
     top: 150px;
     left: 145px;
+  }
+  
+  .right-hand {
+    position: fixed;
+    width: 18px;
+    height: 8px;
+    background-color: #f4d03f; /* Yellow */
+    border: 2px solid #000; /* Black */
+    border-radius: 50%;
+    top: 175px;
+    left: 135px;   
+  }
+  
+  .jake::after {
+    content: "Dina Rodriguez 19566";
+  }
+  .jake::before {
+    content: "UVG - LAB 4";
   }
