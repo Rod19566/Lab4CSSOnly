@@ -46,7 +46,6 @@ body {
     left: 40px;
     transition: 0.3s;
   }
-  
     /* ANIMATION */
     .tail:hover {
     height: 55px;
@@ -250,4 +249,8 @@ body {
   }
   .jake::first-letter{
     font-size: 20px;
+  }
+  
+  p:nth-child(even) {
+    background-color: rgb(214, 214, 157);
   }
