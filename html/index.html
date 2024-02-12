@@ -9,18 +9,17 @@
       background-color: #6fbf71;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       height: 100vh;
       margin: 0;
     }
 
-    #jake {
-      justify-content: center;
-      align-items: center;
+    .jake {
+      justify-content: flex-start; !important;
+      align-items: flex-start; !important;
       width: 200px;
-      height: 200px;
+      height: 250px;
     }
-
 
     .head {
       position: fixed;
@@ -40,7 +39,7 @@
       height: 20px;
       border-radius: 50%;
       top: 50px;
-      left: 60px;
+      left: 60px; 
     }
 
     /* TAIL */
@@ -54,8 +53,50 @@
       top: 175px;
       left: 40px;
     }
+
+    .left-leg {
+      position: fixed;
+      width: 12px;
+      height: 80px;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      top: 175px;
+      left: 55px;      
+    }
+
+    .left-foot {
+      position: fixed;
+      width: 20px;
+      height: 10px;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      border-radius: 50%;
+      top: 255px;
+      left: 55px;      
+    }
+
+    .right-leg {
+      position: fixed;
+      width: 12px;
+      height: 80px;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      top: 175px;
+      left: 125px;      
+    }
+
+    .right-foot {
+      position: fixed;
+      width: 20px;
+      height: 10px;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      border-radius: 50%;
+      top: 255px;
+      left: 125px;      
+    }
     
-    .body {
+    .jake-body {
       position: fixed;
       background-color: #f4d03f; /* Yellow */
       border: 2px solid #000; /* Black */
@@ -75,6 +116,7 @@
       top: 60px;
       left: 60px;
     }
+    
     .left-eye-white {
       position: fixed;
       background-color: #ffffff; /* White */
@@ -155,10 +197,14 @@
         <p>
           Jake the Dog
         </p>
-        <div id="jake">
+        <div class="jake">
           <div class="head"></div>
           <div class="parallelogram"></div>
-          <div class="body"></div>
+          <div class="left-leg"></div>
+          <div class="left-foot"></div>
+          <div class="right-leg"></div>
+          <div class="right-foot"></div>
+          <div class="jake-body"></div>
           <div class="face-clean1"></div>
           <div class="left-eye"></div>
           <div class="left-eye-white"></div>
