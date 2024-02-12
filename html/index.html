@@ -6,7 +6,7 @@
     <title>Lab 4</title> 
     <style>
       body {
-      background-color: #ade8f4;
+      background-color: #6fbf71;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,50 +19,119 @@
       width: 200px;
       height: 200px;
     }
-
-    /* Jake's head */
+    
     #head {
       position: absolute;
       background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
       width: 120px;
-      height: 120px;
+      height: 100px;
       border-radius: 50%;
       top: 40px;
       left: 40px;
     }
 
-    /* Jake's left eye */
+    #face-clean1 {
+      position: absolute;
+      background-color: #f4d03f; /* Yellow */
+      width: 70px;
+      height: 20px;
+      border-radius: 50%;
+      top: 50px;
+      left: 60px;
+    }
+    
+    #body {
+      position: absolute;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      width: 120px;
+      height: 175px;
+      border-radius: 50%;
+      top: 60px;
+      left: 40px;
+    }
+
     #left-eye {
       position: absolute;
       background-color: #000; /* Black */
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 75%;
       top: 60px;
-      left: 70px;
+      left: 60px;
+    }
+    #left-eye-white {
+      position: absolute;
+      background-color: #ffffff; /* White */
+      width: 30px;
+      height: 30px;
+      border-radius: 75%;
+      top: 63px;
+      left: 67px;
     }
 
-    /* Jake's right eye */
     #right-eye {
       position: absolute;
       background-color: #000; /* Black */
-      width: 20px;
-      height: 20px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       top: 60px;
       left: 110px;
     }
 
-    /* Jake's mouth */
+    #right-eye-white {
+      position: absolute;
+      background-color: #ffffff; /* White */
+      width: 30px;
+      height: 30px;
+      border-radius: 75%;
+      top: 63px;
+      left: 113px;
+    }
+
+    #snout1 {
+      position: absolute;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      width: 50px;
+      height: 60px;
+      border-radius: 50%;
+      top: 75px;
+      left: 75px;
+    }
+
+    #snout2 {
+      position: absolute;
+      background-color: #000;  /* Black */
+      width: 20px;
+      height: 15px;
+      border-radius: 50%;
+      top: 90px;
+      left: 92px;
+    }
+
     #mouth {
       position: absolute;
       border: 2px solid #000; /* Black */
-      width: 60px;
-      height: 20px;
+      width: 12px;
+      height: 18px;
       border-radius: 10px;
-      top: 100px;
-      left: 70px;
+      top: 95px;
+      left: 95px;
     }
+
+  #face-clean2 {
+    position: absolute;
+    background-color: #f4d03f; /* Yellow */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 125px;
+    left: 92px;
+  }
+
     </style>
   </head>
   <body>
@@ -77,8 +146,15 @@
         </p>
         <div id="jake">
           <div id="head"></div>
+          <div id="body"></div>
+          <div id="face-clean1"></div>
           <div id="left-eye"></div>
+          <div id="left-eye-white"></div>
           <div id="right-eye"></div>
+          <div id="right-eye-white"></div>
+          <div id="snout1"></div>
+          <div id="snout2"></div>
+          <div id="face-clean2"></div>
           <div id="mouth"></div>
         </div>
       </article>
