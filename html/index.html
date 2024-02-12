@@ -15,13 +15,15 @@
     }
 
     #jake {
-      position: relative;
+      justify-content: center;
+      align-items: center;
       width: 200px;
       height: 200px;
     }
-    
-    #head {
-      position: absolute;
+
+
+    .head {
+      position: fixed;
       background-color: #f4d03f; /* Yellow */
       border: 2px solid #000; /* Black */
       width: 120px;
@@ -31,8 +33,8 @@
       left: 40px;
     }
 
-    #face-clean1 {
-      position: absolute;
+    .face-clean1 {
+      position: fixed;
       background-color: #f4d03f; /* Yellow */
       width: 70px;
       height: 20px;
@@ -40,9 +42,21 @@
       top: 50px;
       left: 60px;
     }
+
+    /* TAIL */
+    .parallelogram {
+      position: fixed;
+      width: 50px;
+      height: 25px;
+      background-color: #f4d03f; /* Yellow */
+      border: 2px solid #000; /* Black */
+      transform: skew(20deg);
+      top: 175px;
+      left: 40px;
+    }
     
-    #body {
-      position: absolute;
+    .body {
+      position: fixed;
       background-color: #f4d03f; /* Yellow */
       border: 2px solid #000; /* Black */
       width: 120px;
@@ -52,8 +66,8 @@
       left: 40px;
     }
 
-    #left-eye {
-      position: absolute;
+    .left-eye {
+      position: fixed;
       background-color: #000; /* Black */
       width: 40px;
       height: 40px;
@@ -61,8 +75,8 @@
       top: 60px;
       left: 60px;
     }
-    #left-eye-white {
-      position: absolute;
+    .left-eye-white {
+      position: fixed;
       background-color: #ffffff; /* White */
       width: 30px;
       height: 30px;
@@ -71,8 +85,8 @@
       left: 67px;
     }
 
-    #right-eye {
-      position: absolute;
+    .right-eye {
+      position: fixed;
       background-color: #000; /* Black */
       width: 40px;
       height: 40px;
@@ -81,8 +95,8 @@
       left: 110px;
     }
 
-    #right-eye-white {
-      position: absolute;
+    .right-eye-white {
+      position: fixed;
       background-color: #ffffff; /* White */
       width: 30px;
       height: 30px;
@@ -91,8 +105,8 @@
       left: 113px;
     }
 
-    #snout1 {
-      position: absolute;
+    .snout1 {
+      position: fixed;
       background-color: #f4d03f; /* Yellow */
       border: 2px solid #000; /* Black */
       width: 50px;
@@ -102,8 +116,8 @@
       left: 75px;
     }
 
-    #snout2 {
-      position: absolute;
+    .snout2 {
+      position: fixed;
       background-color: #000;  /* Black */
       width: 20px;
       height: 15px;
@@ -112,8 +126,8 @@
       left: 92px;
     }
 
-    #mouth {
-      position: absolute;
+    .mouth {
+      position: fixed;
       border: 2px solid #000; /* Black */
       width: 12px;
       height: 18px;
@@ -122,15 +136,15 @@
       left: 95px;
     }
 
-  #face-clean2 {
-    position: absolute;
-    background-color: #f4d03f; /* Yellow */
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    top: 125px;
-    left: 92px;
-  }
+    .face-clean2 {
+      position: fixed;
+      background-color: #f4d03f; /* Yellow */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 125px;
+      left: 92px;
+    }
 
     </style>
   </head>
@@ -139,23 +153,21 @@
       <article>
         <h1>CSS Only</h1>
         <p>
-          Que los alumnos practiquen conceptos básicos de css alrededor de posicionamiento y layout, a traer imágenes y diseños al html, a distinguir criterios de evaluación que no solo podrían ser muy difíciles de cumplir, sino que también podrían bloquear otros criterios.
-        </p>
-        <p>
           Jake the Dog
         </p>
         <div id="jake">
-          <div id="head"></div>
-          <div id="body"></div>
-          <div id="face-clean1"></div>
-          <div id="left-eye"></div>
-          <div id="left-eye-white"></div>
-          <div id="right-eye"></div>
-          <div id="right-eye-white"></div>
-          <div id="snout1"></div>
-          <div id="snout2"></div>
-          <div id="face-clean2"></div>
-          <div id="mouth"></div>
+          <div class="head"></div>
+          <div class="parallelogram"></div>
+          <div class="body"></div>
+          <div class="face-clean1"></div>
+          <div class="left-eye"></div>
+          <div class="left-eye-white"></div>
+          <div class="right-eye"></div>
+          <div class="right-eye-white"></div>
+          <div class="snout1"></div>
+          <div class="snout2"></div>
+          <div class="face-clean2"></div>
+          <div class="mouth"></div>
         </div>
       </article>
     </main>
