@@ -244,3 +244,10 @@ body {
   .jake::before {
     content: "UVG - LAB 4";
   }
+
+  .jake::first-line{
+    font-weight: bold;
+  }
+  .jake::first-letter{
+    font-size: 20px;
+  }
